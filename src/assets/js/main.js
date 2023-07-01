@@ -1,10 +1,27 @@
+// Open links in mobiles
+function handleSmallScreens() {
+    document.querySelector(".navbar-toggler").addEventListener("click", () => {
+        let navbarMenu = document.querySelector(".navbar-menu");
+
+        if (!navbarMenu.classList.contains("active")) {
+            navbarMenu.classList.add("active");
+        } else {
+            navbarMenu.classList.remove("active");
+        }
+    });
+}
+
+handleSmallScreens();
+
+
+// Display file name
 const actualBtn = document.getElementById('upload__btn');
 
 const fileChosen = document.getElementById('file-chosen');
 
-actualBtn.addEventListener('change', function(){
-  fileChosen.textContent = this.files[0].name
-})
+// actualBtn.addEventListener('change', function(){
+//   fileChosen.textContent = this.files[0].name
+// })
 
 
 function showPreview(event) {
