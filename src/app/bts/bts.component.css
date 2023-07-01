@@ -1,0 +1,53 @@
+/* ========================= BTS PAGE ======================= */
+
+.pdid__title__space {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.pdid__title {
+    padding-top: 10px;
+}
+
+.rep__button {
+    /* display: inline-block; */
+    color: #000;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.rep__button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.pdid__btn {
+    margin-left: 10px;
+}
+
+.pdid__desc__container {
+    margin: 30px;
+}
+
+.pdid__desc {
+    padding: 10px 50px 10px 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.92);
+}

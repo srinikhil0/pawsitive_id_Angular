@@ -1,0 +1,120 @@
+.home__container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    /* background-color: #7171fd; */
+    /* background-color: #0CE853; */
+    /* background-color: #f6fba2;
+    background-image: linear-gradient(315deg, #f6fba2 0%, #20ded3 74%); */
+    /* background: hsla(224, 56%, 58%, 1);
+    background: linear-gradient(90deg, hsla(224, 56%, 58%, 1) 0%, hsla(0, 0%, 80%, 1) 50%, hsla(69, 84%, 76%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(224, 56%, 58%, 1) 0%, hsla(0, 0%, 80%, 1) 50%, hsla(69, 84%, 76%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(224, 56%, 58%, 1) 0%, hsla(0, 0%, 80%, 1) 50%, hsla(69, 84%, 76%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5676D0", endColorstr="#CCCCCC", GradientType=1 ); */
+}
+
+.left__container {
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eceef3;    */
+}
+
+.home__img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__desc {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.home__desc p {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.right__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__title {
+    text-align: center;
+    margin: 25px;
+    margin-top: 40px;
+}
+
+.home__title h1 {
+    color: #fff;
+}
+
+.upload__btn {
+    background-color: #3c4250;
+    color: white;
+    padding: 0.5rem;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload__btn__div {
+    text-align: center;
+}
+
+.upload__btn__div span {
+    align-items: center;
+    text-align: center;
+    /* color: #fff; */
+}
+
+#file-chosen {
+    margin-left: 0.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.upload__img {
+    margin-bottom: 25px;
+}
+
+.upload__preview {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.upload__img__bg {
+    opacity: 0.7;
+}
+
+.result__bar {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}

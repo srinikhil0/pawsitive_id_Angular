@@ -1,0 +1,111 @@
+/* ========================= BLOG SECTION ==================== */
+.dog__breeds {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.blog__dog {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.dog__profile__img {
+    height: 70%;
+}
+
+.dog__description__bk {
+    background-image: linear-gradient(0deg, #3f5efb, #fc466b);
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid;
+    border-radius: 30px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+}
+
+.dog__logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30%;
+    left: 30px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.dog__logo img {
+    height: 100%;
+}
+
+.dog__description {
+    position: absolute;
+    color: #000;
+    font-weight: 500;
+    left: 100px;
+    bottom: 26%;
+}
+
+.dog__btn {
+    position: absolute;
+    color: #000;
+    right: 20px;
+    bottom: 10%;
+    padding: 2px 2px;
+    border: 1px solid #000;
+}
+
+.dog__btn:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.dog__name {
+    position: absolute;
+    color: #000;
+    left: 30px;
+    bottom: 10%;
+}
+
+#searchInput {
+    margin-top: 15px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+input[type=text] {
+    width: 70%;
+}
