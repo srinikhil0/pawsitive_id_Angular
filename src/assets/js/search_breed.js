@@ -1,22 +1,3 @@
-// Search breed
-// const searchInput = document.getElementById('searchInput');
-// const cards = document.querySelectorAll('.blog__dog');
-
-// searchInput.addEventListener('input', function() {
-//   const searchQuery = searchInput.value.toLowerCase();
-
-//   cards.forEach(card => {
-//     const breedName = card.querySelector('.dog__name').textContent.toLowerCase();
-
-//     if (breedName.includes(searchQuery)) {
-//       card.style.display = 'block';
-//     } else {
-//       card.style.display = 'none';
-//     }
-//   });
-// });
-
-
 function searchCards() {
     // Get the search query from the input field
     var query = document.getElementById('searchInput').value.toLowerCase();
@@ -41,8 +22,8 @@ function searchCards() {
   }
   
   // Get the search input element
-  var searchInput = document.getElementById('searchInput');
+  // var searchInput = document.getElementById('searchInput');
   
   // Add an input event listener to the search input
-  searchInput.addEventListener('input', searchCards);
+  // searchInput.addEventListener('input', searchCards);
   

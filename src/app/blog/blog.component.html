@@ -1,7 +1,8 @@
 <!-- ===================== BLOG SECTION ======================= -->
 <div class="blog__container">
 
-    <input type="text" id="searchInput" name="search" placeholder="Search Your Breed...">
+    <input type="text" id="searchInput" name="search" placeholder="Search Your Breed..."
+        (input)="onSearchInput($event)">
 
     <div class="dog__breeds">
         <!-- =================== BOSTON BULL ==================== -->

@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
-declare const showPreview: any, fileName: any;
+declare const showPreview: any;
 
 @Component({
   selector: 'app-home',
@@ -26,6 +26,5 @@ export class HomeComponent {
 
   onchange(){
     showPreview();
-    fileName();
   }
 }

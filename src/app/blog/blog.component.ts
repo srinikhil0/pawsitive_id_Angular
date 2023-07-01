@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare function searchCards(): any;
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class BlogComponent {
 
+  onSearchInput(event: Event): void {
+    searchCards();
+  }
 }
