@@ -1,17 +1,4 @@
-
- * {
-	 box-sizing: border-box;
-	 padding: 0;
-	 margin: 0;
-}
- body {
-	 font-family: 'Roboto', sans-serif;
-	 font-size: 0.925rem;
-}
- a {
-	 text-decoration: none;
-}
- .container {
+.container {
 	 width: 1170px;
 	 position: relative;
 	 margin-left: auto;
@@ -36,8 +23,6 @@
 	 background-color: #fff;
 	 padding: 1rem 1.15rem;
 	 border-bottom: 1px solid #eceef3;
-	/* |----------------------------------- | Start navbar logo or brand etc.. |----------------------------------- */
-	/* |----------------------------------- | Start navbar menu |----------------------------------- */
 }
  @media (min-width: 576px) {
 	 .navbar .container {

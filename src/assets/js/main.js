@@ -32,7 +32,7 @@ function showPreview(event) {
         var imageSrc = e.target.result;
 
         // Create a new image element
-        var newImage = document.createElement("img");
+        var newImage = document.getElementById("file-ip-1-preview");
         newImage.src = imageSrc;
 
         // Replace the first image with the new image

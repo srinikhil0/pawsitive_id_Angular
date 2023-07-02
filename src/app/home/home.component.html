@@ -23,17 +23,14 @@
             </div>
 
             <!-- actual upload which is hidden -->
-            <!-- <input type="file" #uploadBtn id="upload__btn" accept="image/*" onchange="showPreview(event);" hidden/> -->
+            <input type="file" #uploadBtn id="upload__btn" accept="image/*" (change)="onFileChange($event)"
+                    onchange="showPreview(event);" hidden />
 
             <div class="upload__btn__div">
 
                 <!-- our custom upload button -->
                 <label class="upload__btn" for="upload__btn"><i class="uil uil-upload"></i>
                     Upload Your Pug-Shot </label>
-
-                <!-- actual upload which is hidden -->
-                <input type="file" #uploadBtn id="upload__btn" accept="image/*" (change)="onFileChange($event)"
-                    onchange="showPreview(event);" hidden />
 
                 <!-- name of file chosen -->
                 <span id="file-chosen">{{ fileChosen }}</span>

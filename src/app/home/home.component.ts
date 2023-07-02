@@ -9,6 +9,12 @@ declare const showPreview: any;
 })
 
 export class HomeComponent {
+
+  onchange(){
+    showPreview();
+  }
+
+
   @ViewChild('uploadBtn') uploadBtn!: ElementRef<HTMLInputElement>;
   fileChosen: string = 'No file chosen';
 
@@ -20,11 +26,5 @@ export class HomeComponent {
     } else {
       this.fileChosen = 'No file chosen';
     }
-  }
-
-
-
-  onchange(){
-    showPreview();
   }
 }
