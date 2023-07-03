@@ -3,14 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BtsComponent } from './bts/bts.component';
-import { BlogComponent } from './blog/blog.component';
+import { GalleryComponent } from './gallery/gallery.component';
+// import { BlogComponent } from './blog/blog.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent},
   { path: 'bts', component: BtsComponent},
-  { path: 'blog', component: BlogComponent},
+  // { path: 'blog', component: BlogComponent},
+  { path: 'gallery', component: GalleryComponent},
 ];
 
 @NgModule({

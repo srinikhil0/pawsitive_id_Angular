@@ -1,226 +1,101 @@
-<!-- ===================== BLOG SECTION ======================= -->
 <div class="blog__container">
 
     <input type="text" id="searchInput" name="search" placeholder="Search Your Breed..."
         (input)="onSearchInput($event)">
 
-    <div class="dog__breeds">
-        <!-- =================== BOSTON BULL ==================== -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/boston_bull.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Boston Bulls snore like champions!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Boston Bull</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+    <div class="band">
+        <div class="item-1 blog__dog">
+            <a href="#" class="card">
+                <div class="thumb" style="background-image: url(../../assets/images/blog_dogs/boston_bull.png);">
+                </div>
+                <article>
+                    <h1 class="dog__name">Boston Bull: The Mascot of Boston University</h1>
+                    <p class="dog__description"></p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- =================== DINGO ========================== -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/dingo.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Dingo dogs are skilled jumpers, defying gravity!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Dingo</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+        <div class="item-2 blog__dog">
+            <a href="https://webdesign.tutsplus.com/articles/how-to-conduct-remote-usability-testing--cms-27045"
+                class="card">
+                <div class="thumb"
+                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/users-2.png);">
+                </div>
+                <article>
+                    <h1 class="dog__name">How to Conduct Remote Usability Testing</h1>
+                    <p class="dog__description"></p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- ==================== PEKINESE ====================== -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/pekinese.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Pekingese dogs snort and snore in a hilariously adorable way.</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Pekinese</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+        <div class="item-3 blog__dog">
+            <a href="https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724"
+                class="card">
+                <div class="thumb"
+                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-5.jpg);">
+                </div>
+                <article>
+                    <h1 class="dog__name">Created by You, July Edition</h1>
+                    <p class="dog__description">Welcome to our monthly feature of fantastic tutorial results created by
+                        you, the Envato Tuts+
+                        community! </p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- ==================== BLUETICK ======================= -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/bluetick.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Bluetick Coonhounds have a hilarious bay that will make you smile.</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Bluetick</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+        <div class="item-4 blog__dog">
+            <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826"
+                class="card">
+                <div class="thumb"
+                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);">
+                </div>
+                <article>
+                    <h1 class="dog__name">How to Code a Scrolling “Alien Lander” Website</h1>
+                    <p class="dog__description">We’ll be putting things together so that as you scroll down from the top
+                        of the page you’ll see
+                        an
+                        “Alien Lander” making its way to touch down.</p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- ==================== GOLDEN RETRIEVER ================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/golden_retriever.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Golden Retrievers: the goofballs of the dog world!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Golden Retriever</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+        <div class="item-5 blog__dog">
+            <a href="https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139"
+                class="card">
+                <div class="thumb"
+                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/strange.jpg);">
+                </div>
+                <article>
+                    <h1 class="dog__name">How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
+                    <p class="dog__description"></p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- ==================== BEDLINGTON TERRIER =============== -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/bedlington_terrier.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Bedlington Terriers: the ultimate "sheepdog" impostors!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Bedlington Terriers</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+        <div class="item-6 blog__dog">
+            <a href="https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338"
+                class="card">
+                <div class="thumb"
+                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flor.jpg);"></div>
+                <article>
+                    <h1 class="dog__name">5 Inspirational Business Portraits and How to Make Your Own</h1>
+                    <p class="dog__description"></p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- ==================== BORZOI ============================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/borzoi.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Borzois: the champions of canine relaxation!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Borzoi</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
+        <div class="item-7 blog__dog">
+            <a href="https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281"
+                class="card">
+                <div class="thumb"
+                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/china.png);"></div>
+                <article>
+                    <h1 class="dog__name">Notes From Behind the Firewall: The State of Web Design in China</h1>
+                    <p class="dog__description"></p>
+                    <span>Pawsitive ID</span>
+                </article>
+            </a>
         </div>
-
-        <!-- ==================== BASENJI ============================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/basenji.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Basenjis: the yodeling, barkless wonders of the dog world!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Basenji</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
-        </div>
-
-        <!-- ==================== BASENJI ============================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/basenji.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Basenjis: the yodeling, barkless wonders of the dog world!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Basenji</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
-        </div>
-
-        <!-- ==================== BASENJI ============================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/basenji.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Basenjis: the yodeling, barkless wonders of the dog world!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Basenji</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
-        </div>
-
-        <!-- ==================== BASENJI ============================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/basenji.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Basenjis: the yodeling, barkless wonders of the dog world!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Basenji</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
-        </div>
-
-        <!-- ==================== BASENJI ============================ -->
-        <div class="blog__dog">
-            <img class="dog__profile__img" src="assets/images/blog_dogs/basenji.png" alt="">
-            <div class="dog__description__bk"></div>
-            <div class="dog__logo">
-                <img src="assets/images/favicon/android-chrome-192x192.png" alt="">
-            </div>
-            <div class="dog__description">
-                <p>Basenjis: the yodeling, barkless wonders of the dog world!</p>
-            </div>
-            <div>
-                <h3 class="dog__name">Basenji</h3>
-            </div>
-            <div class="btn__dog">
-                <a class="dog__btn" href="#">Learn More</a>
-            </div>
-        </div>
-
     </div>
 
 </div>

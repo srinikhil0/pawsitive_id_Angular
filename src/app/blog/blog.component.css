@@ -1,100 +1,82 @@
-/* ========================= BLOG SECTION ==================== */
-.dog__breeds {
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
 }
-
-.blog__dog {
-    display: inline-block;
+@media (min-width: 30em) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+   }
+}
+@media (min-width: 60em) {
+    .band {
+        grid-template-columns: repeat(4, 1fr);
+   }
+}
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     position: relative;
-    width: 300px;
-    min-width: 300px;
-    height: 300px;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: 30px;
+    top: 0;
+    transition: all 0.1s ease-in;
 }
-
-.dog__profile__img {
-    height: 70%;
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
-
-.dog__description__bk {
-    background-image: linear-gradient(0deg, #3f5efb, #fc466b);
-    background: rgba(255, 255, 255, 0.14);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.9px);
-    -webkit-backdrop-filter: blur(9.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border: 1px solid;
-    border-radius: 30px;
-    position: absolute;
-    top: 55%;
-    left: -5px;
-    height: 65%;
-    width: 108%;
-    transform: skew(19deg, -9deg);
+.card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-.dog__logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 30%;
-    left: 30px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
-    border: 1px solid rgba(255, 255, 255, 1);
+.card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
 }
-
-.dog__logo img {
-    height: 100%;
+.card p {
+    flex: 1;
+    line-height: 1.4;
 }
-
-.dog__description {
-    position: absolute;
-    color: #000;
-    font-weight: 500;
-    left: 100px;
-    bottom: 26%;
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
 }
-
-.dog__btn {
-    position: absolute;
-    color: #000;
-    right: 20px;
-    bottom: 10%;
-    padding: 2px 2px;
-    border: 1px solid #000;
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
 }
-
-.dog__btn:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    z-index: 10;
-}
-
-.dog__name {
-    position: absolute;
-    color: #000;
-    left: 30px;
-    bottom: 10%;
+@media (min-width: 60em) {
+    .item-1 {
+        grid-column: 1 / span 2;
+   }
+    .item-1 h1 {
+        font-size: 24px;
+   }
 }
 
 #searchInput {
     margin-top: 15px;
     margin-left: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 5px;
     padding: 15px;
     border-radius: 10px;
-    background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
