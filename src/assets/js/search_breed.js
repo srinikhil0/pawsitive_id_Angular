@@ -9,7 +9,7 @@ function searchCards() {
     for (var i = 0; i < cards.length; i++) {
       var card = cards[i];
       var title = card.getElementsByClassName('dog__name')[0].innerText.toLowerCase();
-      var description = card.getElementsByClassName('dog__description')[0].innerText.toLowerCase();
+      var description = card.getElementsByClassName('dog__origin')[0].innerText.toLowerCase();
   
       if (title.includes(query) || description.includes(query)) {
         // Show the card if it matches the search query
