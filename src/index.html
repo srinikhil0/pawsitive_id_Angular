@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>PawsitiveIdAngular</title>
@@ -16,8 +17,30 @@
   <!--==================== UNICONS ====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- =================== change background every time ================== -->
+  <script>
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function setRandomBackgroundColor() {
+      var color = getRandomColor();
+      document.body.style.backgroundColor = color;
+    }
+
+    // Call the function when the page loads
+    window.onload = setRandomBackgroundColor;
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
