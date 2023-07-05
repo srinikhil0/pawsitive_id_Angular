@@ -3,6 +3,7 @@
 .about__project {
     color: #000;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 .about__title {
@@ -21,17 +22,20 @@
 }
 
 .team__card__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
     padding: 20px;
 }
 
 .team__left {
-    width: 50%;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .team__right {
-    width: 50%;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .team__card {

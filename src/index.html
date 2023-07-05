@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- =================== change background every time ================== -->
+  <!-- =================== CHANGE BACKGROUND EVERY TIME ================== -->
   <script>
     function getRandomColor() {
       var letters = "0123456789ABCDEF";
@@ -32,11 +32,41 @@
     function setRandomBackgroundColor() {
       var color = getRandomColor();
       document.body.style.backgroundColor = color;
+
+      // Calculate brightness
+      var rgb = hexToRgb(color);
+      var brightness = calculateBrightness(rgb.r, rgb.g, rgb.b);
+
+      // Set text color based on brightness
+      var textColor = brightness > 127 ? "#000" : "#fff";
+      document.body.style.color = textColor;
+    }
+
+    // Convert hexadecimal color to RGB
+    function hexToRgb(hex) {
+      var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+      hex = hex.replace(shorthandRegex, function (m, r, g, b) {
+        return r + r + g + g + b + b;
+      });
+      var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return result
+        ? {
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16),
+        }
+        : null;
+    }
+
+    // Calculate brightness based on RGB values
+    function calculateBrightness(r, g, b) {
+      return (r * 299 + g * 587 + b * 114) / 1000;
     }
 
     // Call the function when the page loads
     window.onload = setRandomBackgroundColor;
   </script>
+
 </head>
 
 <body>

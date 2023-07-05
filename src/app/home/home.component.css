@@ -98,18 +98,19 @@
     height: auto;
     padding: 20px;
     margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    font-weight: 700;
 }
 
 
-@media screen and (max-width: 768px){
-    .home__container{
+@media screen and (max-width: 768px) {
+    .home__container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -117,46 +118,47 @@
         margin: auto;
     }
 
-    .left__container{
+    .left__container {
         width: 100%;
         padding-top: 30px;
     }
 
-    .home__gif{
+    .home__gif {
         width: 80%;
         margin: auto;
     }
 
-    .home__desc p{
+    .home__desc p {
         padding-top: 60px;
         font-size: 16px;
     }
 
-    .right__container{
+    .right__container {
         width: 100%;
     }
 
-    .upload__preview{
+    .upload__preview {
         margin: auto;
         width: 80%;
     }
 
-    .upload__img__bg{
+    .upload__img__bg {
         margin: auto;
         width: 100%;
     }
 
-    #file-ip-1-preview{
+    #file-ip-1-preview {
         margin: auto;
         width: 100%;
     }
 
-    .upload__btn__div{
+    .upload__btn__div {
         margin: auto;
         margin-top: 40px;
     }
 
-    .result__bar{
+    .result__bar {
         margin: 15px auto 30px;
     }
 }
+
