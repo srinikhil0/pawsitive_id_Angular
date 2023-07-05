@@ -26,6 +26,10 @@
     margin: 10px;
 }
 
+.rep__button:hover{
+    transform: scale(0.97);
+}
+
 .rep__button--flex {
     display: inline-flex;
     align-items: center;

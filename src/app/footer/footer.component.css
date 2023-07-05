@@ -50,6 +50,10 @@ footer {
     margin: 1rem 0 3rem 0;
 }
 
+.socials a :hover{
+    transform: scale(0.97);
+}
+
 .socials li {
     margin: 0 10px;
 }
@@ -58,23 +62,19 @@ footer {
     text-decoration: none;
     color: #fff;
     border: 1.1px solid white;
-    padding: 5px;
-
+    padding: 10px;
     border-radius: 50%;
-
 }
 
 .socials a i {
     font-size: 1.1rem;
     width: 20px;
-
-
     transition: color .4s ease;
-
 }
 
 .socials a:hover i {
-    color: aqua;
+    color: #6666ff;
+    transform: scale(0.97);
 }
 
 .footer-bottom {
@@ -93,7 +93,7 @@ footer {
 }
 
 .footer-bottom p a {
-    color: #44bae8;
+    color: #6666ff;
     font-size: 16px;
     text-decoration: none;
 }
@@ -124,7 +124,7 @@ footer {
 }
 
 .footer-menu ul li a:hover {
-    color: #27bcda;
+    color: #66f;
 }
 
 @media (max-width:500px) {

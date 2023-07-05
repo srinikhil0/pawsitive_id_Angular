@@ -40,6 +40,12 @@
       // Set text color based on brightness
       var textColor = brightness > 127 ? "#000" : "#fff";
       document.body.style.color = textColor;
+
+      // Set anchor tag color based on brightness
+      var anchorTag = document.getElementsByTagName("a")[0];
+      if (anchorTag) {
+        anchorTag.style.color = textColor;
+      }
     }
 
     // Convert hexadecimal color to RGB
@@ -51,10 +57,10 @@
       var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
       return result
         ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16),
-        }
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16),
+          }
         : null;
     }
 
