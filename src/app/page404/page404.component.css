@@ -1,0 +1,34 @@
+.page__contianer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.text__centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -275%);
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+  }
+
+@media screen and (max-width: 768px){
+    .text__centered{
+        transform: translate(-50%, -360%);
+        font-size: 20px;
+    }
+}

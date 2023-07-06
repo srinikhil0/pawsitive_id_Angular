@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { BtsComponent } from './bts/bts.component';
 // import { BlogComponent } from './blog/blog.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { Page404Component } from './page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutComponent,
     BtsComponent,
     // BlogComponent,
-    GalleryComponent
+    GalleryComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
