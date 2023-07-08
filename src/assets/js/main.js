@@ -34,6 +34,7 @@ function showPreview(event) {
         // Create a new image element
         var newImage = document.getElementById("file-ip-1-preview");
         newImage.src = imageSrc;
+        newImage.classList.add("upload__img__bg");
 
         // Replace the first image with the new image
         var uploadPreview = document.querySelector(".upload__preview");
