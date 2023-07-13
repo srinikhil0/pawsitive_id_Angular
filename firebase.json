@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/pawsitive-id-angular",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
