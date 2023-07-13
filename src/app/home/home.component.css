@@ -180,3 +180,31 @@
     }
 }
 
+/* ============ IPHONE SE ============== */
+@media screen and (min-width: 375px), (min-width: 360px) {
+    .home__title{
+        margin: 10px;
+    }
+
+    .upload__img{
+        margin-bottom: 0px;
+    }
+
+    .result__bar{
+        margin: 25px auto 20px;
+    }
+
+    .home__img svg{
+        padding: 5px;
+        width: 250pt;
+    }
+
+    .home__desc p{
+        padding: 30px 5px;
+        font-size: 20px;
+    }
+
+    .upload__preview{
+        width: 90%;
+    }
+}

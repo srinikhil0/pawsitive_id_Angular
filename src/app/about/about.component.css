@@ -145,3 +145,14 @@
         margin: auto;
     }
 }
+
+/* ============ IPHONE SE ============== */
+@media screen and (min-width: 375px), (min-width: 360px) {
+    .about__desc{
+        padding: 5px;
+    }
+
+    .team__card{
+        width: 100%;
+    }
+}

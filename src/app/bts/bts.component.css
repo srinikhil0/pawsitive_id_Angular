@@ -62,3 +62,20 @@
         padding: 10px;
     }
 }
+
+/* ============ IPHONE SE ============== */
+@media screen and (min-width: 375px), (min-width: 360px){
+    /* .pdid__btn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    .pdid__btn a{
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .pdid__desc__container{
+        margin: 5px;
+    }
+}

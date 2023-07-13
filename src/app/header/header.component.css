@@ -217,3 +217,14 @@
 		font-size: 1.05rem;
 	}
 }
+
+/* ============ IPHONE SE ============== */
+@media screen and (min-width: 375px) {
+	svg{
+		width: 250pt;
+	}
+
+	.navbar{
+		padding: 0.5rem 1.15rem;
+	}
+}
