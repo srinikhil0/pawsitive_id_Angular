@@ -16,7 +16,7 @@ export class HomeComponent {
 
   @ViewChild('uploadBtn') uploadBtn!: ElementRef<HTMLInputElement>;
   fileChosen: string = 'No file chosen';
-
+  responseBreed: string | undefined;
 
   onchange(){
     showPreview();
@@ -49,7 +49,8 @@ export class HomeComponent {
         }))
         .subscribe((response: any) => {
           // Handle response here
-          console.log(response);
+          this.responseBreed = response.predicted_class;
+          // console.log(response.predicted_class);
         });
     }
     }
