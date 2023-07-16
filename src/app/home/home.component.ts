@@ -42,7 +42,7 @@ export class HomeComponent {
       const formData = new FormData();
       formData.append('image', file);
 
-      this.http.post('https://pawsitive-id-backend-k6kwv3hqka-uc.a.run.app', formData)
+      this.http.post('https://pawsitive-id-backend-2-k6kwv3hqka-uc.a.run.app', formData)
         .pipe(catchError(error => {
           console.log(error.message);
           return throwError(error);
