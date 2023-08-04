@@ -11,7 +11,14 @@
 }
 
 .about__desc {
-    padding: 20px 50px 20px 50px;
+    padding: 20px !important;
+    margin: 0 130px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.92);
 }
 
 .about__team {
@@ -39,7 +46,7 @@
 
 .team__card {
     display: flex;
-    width: 70%;
+    width: 70% !important;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -50,10 +57,6 @@
     margin: auto;
     margin-bottom: 10px;
     border: 2px solid;
-}
-
-.team__card:hover{
-    transform: scale(0.97);
 }
 
 .team__img img {
@@ -91,17 +94,6 @@
 .person__fav__dog img {
     width: 20px;
     height: 20px;
-}
-
-.person__social {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.person__social i {
-    font-size: 18px;
-    color: #000;
 }
 
 
