@@ -71,7 +71,7 @@ export class HomeComponent {
 
     if (fileExtension !== 'png' && fileExtension !== 'jpg' && fileExtension !== 'jpeg') {
       this.setDefaultImage();
-      localStorage.removeItem('selectedImageName');
+      this.fileChosen = 'No file chosen';
       return;
     } else {
       const formData = new FormData();
