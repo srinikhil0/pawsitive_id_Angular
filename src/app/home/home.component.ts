@@ -81,6 +81,7 @@ export class HomeComponent {
       this.http.post('https://pawsitive-id-backend-2-k6kwv3hqka-uc.a.run.app', formData)
         .pipe(catchError(error => {
           console.log(error.message);
+          this.responseBreed = 'An error has occurred, refresh the page or try again later'
           return throwError(error);
         }))
         .subscribe((response: any) => {
