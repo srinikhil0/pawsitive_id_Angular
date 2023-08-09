@@ -8,7 +8,7 @@ declare const showPreview: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
   constructor(private http: HttpClient) {}
@@ -51,7 +51,9 @@ export class HomeComponent {
       this.fileChosen = selectedImageName;
       const selectedImage = localStorage.getItem('selectedImage');
       if (selectedImage) {
-        const previewImg = document.getElementById('upload__file__bg') as HTMLImageElement;
+        const previewImg = document.getElementById(
+          'upload__file__bg'
+        ) as HTMLImageElement;
         previewImg.src = selectedImage;
       }
     }
@@ -62,15 +64,31 @@ export class HomeComponent {
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = () => resolve(reader.result as string);
-      reader.onerror = error => reject(error);
+      reader.onerror = (error) => reject(error);
     });
   }
 
   onPhotoUploaded(file: File) {
     const fileExtension = file.name.split('.').pop();
 
-    if (fileExtension !== 'png' && fileExtension !== 'jpg' && fileExtension !== 'jpeg') {
+    if (
+      fileExtension !== 'png' &&
+      fileExtension !== 'jpg' &&
+      fileExtension !== 'jpeg'
+    ) {
       this.setDefaultImage();
+      localStorage.removeItem('selectedImageName');
+
+      const customPopup = document.getElementById(
+        'custom-popup'
+      ) as HTMLElement;
+      customPopup.style.display = 'flex';
+
+      const closeButton = document.getElementById('close-popup') as HTMLElement;
+      closeButton.onclick = function () {
+        customPopup.style.display = 'none';
+      };
+
       this.fileChosen = 'No file chosen';
       return;
     } else {
@@ -78,12 +96,18 @@ export class HomeComponent {
       formData.append('image', file);
       this.responseBreed = 'Fetching Results...';
 
-      this.http.post('https://pawsitive-id-backend-2-k6kwv3hqka-uc.a.run.app', formData)
-        .pipe(catchError(error => {
-          console.log(error.message);
-          this.responseBreed = 'An error has occurred, refresh the page or try again later'
-          return throwError(error);
-        }))
+      this.http
+        .post(
+          'https://pawsitive-id-backend-2-k6kwv3hqka-uc.a.run.app',
+          formData
+        )
+        .pipe(
+          catchError((error) => {
+            console.log(error.message);
+            this.responseBreed = 'An error has occurred, refresh the page or try again later'
+            return throwError(error);
+          })
+        )
         .subscribe((response: any) => {
           // Handle response here
           this.responseBreed = response.predicted_class;
@@ -93,8 +117,12 @@ export class HomeComponent {
   }
 
   setDefaultImage() {
-    alert("Please upload an image file in .png or .jpg format.");
-    const previewImg = document.getElementById('file-ip-1-preview') as HTMLImageElement;
+    // alert("Please upload an image file in .png or .jpg format.");
+    const customPopup = document.getElementById('custom-popup') as HTMLElement;
+    customPopup.style.display = 'none';
+    const previewImg = document.getElementById(
+      'file-ip-1-preview'
+    ) as HTMLImageElement;
     previewImg.src = '../../assets/images/logo/home_page.png';
   }
 
