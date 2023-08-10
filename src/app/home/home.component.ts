@@ -68,14 +68,11 @@ export class HomeComponent {
     });
   }
 
-  onPhotoUploaded(file: File) {
-    const fileExtension = file.name.split('.').pop();
+  async onPhotoUploaded(file: File) {
+    const headerBytes = await this.readFileHeader(file);
+    const detectedFormat = this.detectImageFormat(headerBytes);
 
-    if (
-      fileExtension !== 'png' &&
-      fileExtension !== 'jpg' &&
-      fileExtension !== 'jpeg'
-    ) {
+    if (!detectedFormat || !['jpg', 'png'].includes(detectedFormat)) {
       this.setDefaultImage();
       localStorage.removeItem('selectedImageName');
 
@@ -116,6 +113,42 @@ export class HomeComponent {
     }
   }
 
+  async readFileHeader(file: File): Promise<Uint8Array> {
+    return new Promise<Uint8Array>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        if (reader.result instanceof ArrayBuffer) {
+          const buffer = new Uint8Array(reader.result);
+          resolve(buffer);
+        } else {
+          reject(new Error('Failed to read file header.'));
+        }
+      };
+      reader.onerror = (error) => reject(error);
+      reader.readAsArrayBuffer(file.slice(0, 8)); // Read the first 8 bytes
+    });
+  }
+
+  detectImageFormat(headerBytes: Uint8Array): string | undefined {
+    if (headerBytes.length >= 2) {
+      if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8) {
+        return 'jpg';
+      } else if (
+        headerBytes[0] === 0x89 &&
+        headerBytes[1] === 0x50 &&
+        headerBytes[2] === 0x4E &&
+        headerBytes[3] === 0x47 &&
+        headerBytes[4] === 0x0D &&
+        headerBytes[5] === 0x0A &&
+        headerBytes[6] === 0x1A &&
+        headerBytes[7] === 0x0A
+      ) {
+        return 'png';
+      }
+    }
+    return undefined;
+  }
+
   setDefaultImage() {
     // alert("Please upload an image file in .png or .jpg format.");
     const customPopup = document.getElementById('custom-popup') as HTMLElement;
@@ -133,5 +166,3 @@ export class HomeComponent {
     }
   }
 }
-
-localStorage.clear();
