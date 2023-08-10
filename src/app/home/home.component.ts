@@ -167,4 +167,4 @@ export class HomeComponent {
   }
 }
 
-localstorage.clear();
+localStorage.clear();
